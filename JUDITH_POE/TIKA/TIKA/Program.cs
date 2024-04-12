@@ -9,7 +9,7 @@ internal class Program
         Recipe recipe1 = new Recipe();
         while (true)
         {
-            Console.WriteLine("************************************************************************************");
+            Console.WriteLine("***********************************************************************************");
             Console.WriteLine("\nWelcome!");
             Console.WriteLine("************************************************************************************");
             Console.WriteLine("Select one of the following\n 1.Recipe details\n 2.Display the recipe\n 3.Scale recipe quantities\n 4.Reset quantites \n 5.Clear recipe\n 6.Exit");
