@@ -5,7 +5,7 @@ internal class Program
     {
         // Displays the current Foreground color 
         Console.ForegroundColor = ConsoleColor.Cyan;
-
+        //create the instance of the class
         Recipe recipe1 = new Recipe();
         while (true)
         {
@@ -47,6 +47,7 @@ internal class Program
 
         }
     }
+//the Recipe class stores the arrays 
 
     class Recipe
     {
@@ -58,11 +59,13 @@ internal class Program
 
         public Recipe()
         {
+            
             ingredients = new String[0];
             quantity = new double[0];
             units = new string[0];
             steps = new string[0];
         }
+        //this method stores the data the user will enter
         public void EnterData()
         {
 
@@ -114,7 +117,7 @@ internal class Program
                 Console.WriteLine($"{steps[i]}");
             }
         }
-
+        //this method calculates the recipe quantity
         public void RecipeQauntity(double scale)
         {
             for (int i = 0; i < quantity.Length; i++)
@@ -123,7 +126,7 @@ internal class Program
                 quantity[i] *= scale;
             }
         }
-    -
+    //this resets the recipe quantity 
         public void ResetScale()
         {
             for (int i = 0; i < quantity.Length; i++)
@@ -131,7 +134,7 @@ internal class Program
                 quantity[i] /= 2;
             }
         }
-    
+        //clearRecipe clears the whole recipe
         public void ClearRecipe()
         {
         Console.WriteLine("Are you sure you want to clear if no click 0 or yes click 1");
