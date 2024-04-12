@@ -1,0 +1,14 @@
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\bin\Debug\net8.0\TIKA.exe
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\bin\Debug\net8.0\TIKA.deps.json
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\bin\Debug\net8.0\TIKA.runtimeconfig.json
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\bin\Debug\net8.0\TIKA.dll
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\bin\Debug\net8.0\TIKA.pdb
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.AssemblyInfoInputs.cache
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.AssemblyInfo.cs
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.csproj.CoreCompileInputs.cache
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.dll
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\refint\TIKA.dll
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.pdb
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\TIKA.genruntimeconfig.cache
+C:\Users\RC_Student_lab\source\repos\TIKA\TIKA\obj\Debug\net8.0\ref\TIKA.dll
