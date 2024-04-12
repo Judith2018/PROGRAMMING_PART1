@@ -1,31 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
 internal class Program
 {
+    
     private static void Main(string[] args)
     {
+        
         // Displays the current Foreground color 
         Console.ForegroundColor = ConsoleColor.Cyan;
         //create the instance of the class
         Recipe recipe1 = new Recipe();
         while (true)
         {
+            
             Console.WriteLine("***********************************************************************************");
             Console.WriteLine("\nWelcome!");
             Console.WriteLine("************************************************************************************");
             Console.WriteLine("Select one of the following\n 1.Recipe details\n 2.Display the recipe\n 3.Scale recipe quantities\n 4.Reset quantites \n 5.Clear recipe\n 6.Exit");
             Console.WriteLine("************************************************************************************");
 
+            
             string option = Console.ReadLine();
             switch (option)
             {
                 case "1":
                     recipe1.EnterData();
                     break;
-            
+
+                    
                 case "2":
                     recipe1.DisplayRecipe();
                     break;
                 case "3":
+                    
                     Console.WriteLine("Select a scale of 0.5, 2, or 3");
                     double scale = Convert.ToDouble(Console.ReadLine());
                     recipe1.RecipeQauntity(scale);
@@ -37,6 +43,7 @@ internal class Program
                     recipe1.ClearRecipe();
                     break;
                 case "6":
+                    
                    Environment.Exit(0);
                     break;
             }
@@ -46,6 +53,7 @@ internal class Program
 
 
         }
+    
     }
 //the Recipe class stores the arrays 
 
@@ -59,6 +67,7 @@ internal class Program
 
         public Recipe()
         {
+            
             
             ingredients = new String[0];
             quantity = new double[0];
@@ -74,12 +83,14 @@ internal class Program
             ingredients = new string[ingredientsNo];
             quantity = new double[ingredientsNo];
             units = new string[ingredientsNo];
+            
 
             for (int i = 0; i < ingredientsNo; i++)
             {
                 Console.WriteLine($"Enter details for ingredient {i + 1}:");
 
                 Console.Write("\nEnter ingredient name: ");
+                
                 ingredients[i] = Console.ReadLine();
 
                 Console.Write("\nEnter ingredient quantity: ");
@@ -90,6 +101,7 @@ internal class Program
 
                 ingredients[i] = $"{quantity} {units} of {ingredients}";
             }
+            
             //gathering recipe steps
             Console.Write("\nEnter the number of steps: ");
             int stepsNo = Convert.ToInt32(Console.ReadLine());
@@ -97,6 +109,7 @@ internal class Program
             steps = new string[stepsNo];
             for (int j = 0; j < stepsNo; j++)
             {
+                
                 Console.Write($"Enter step {j + 1}: ");
                 steps[j] = Console.ReadLine();
             }
@@ -105,6 +118,7 @@ internal class Program
     //this method will store the recipe details
         public void DisplayRecipe()
         {
+            
             Console.WriteLine("\nHere is your recipe:");
             Console.WriteLine("Ingredients:");
             for(int i = 0;i < ingredients.Length;i++)
@@ -117,6 +131,7 @@ internal class Program
                 Console.WriteLine($"{steps[i]}");
             }
         }
+        
         //this method calculates the recipe quantity
         public void RecipeQauntity(double scale)
         {
@@ -131,10 +146,12 @@ internal class Program
         {
             for (int i = 0; i < quantity.Length; i++)
             {
+        
                 quantity[i] /= 2;
             }
         }
-        //clearRecipe clears the whole recipe
+        //clear Recipe clears the whole recipe
+        
         public void ClearRecipe()
         {
         Console.WriteLine("Are you sure you want to clear if no click 0 or yes click 1");
